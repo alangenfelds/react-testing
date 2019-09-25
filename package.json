@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest-fetch-mock": "^2.1.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -25,5 +26,10 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
     "react-testing-library": "^4.1.7"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/{!(registerServiceWorker.js|index.js),}.js"
+    ]
   }
 }
